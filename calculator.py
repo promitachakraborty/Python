@@ -2,29 +2,29 @@ import math
 
 
 def add(num1, num2):
-    # This function is used for adding two numbers
+   
             return num1 + num2
 
 
 def subtract(num1, num2):
-    # This function is used for subtracting two numbers
+   
             return num1 - num2
 
 
 def multiply(num1, num2):
-    # This function is used for multiplying two numbers
+   
            return num1 * num2
 
 
 def divide(num1, num2):
-    # This function is used for dividing two numbers
+   
            return num1 / num2
 
 def mod(num1, num2):
            return num1 % num2
 
 def square_root(num1):
-    # This function is used for dividing two numbers
+  
            return num1 ** 0.5
 
 def cube_root(num1):
@@ -46,7 +46,7 @@ def cos(num1):
 def log(num1):
          return(log(num1))
 
-# Now we will take inputs from the user
+
 print("Please select the operation.")
 print("1. Add")
 print("2. Subtract")
