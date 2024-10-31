@@ -1,0 +1,42 @@
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+class Solution:
+    def reverseList(self, head):
+        prev = None
+        current = head
+        
+        while current:
+            next_node = current.next  
+            current.next = prev      
+            prev = current            
+            current = next_node       
+        
+        return prev  
+
+def create_linked_list(arr):
+    if not arr:
+        return None
+    head = ListNode(arr[0])
+    current = head
+    for value in arr[1:]:
+        current.next = ListNode(value)
+        current = current.next
+    return head
+
+
+def linked_list_to_list(head):
+    result = []
+    while head:
+        result.append(head.val)
+        head = head.next
+    return result
+
+# Example usage
+if __name__ == "__main__":
+    head = create_linked_list([1, 2, 3, 4, 5])
+    solution = Solution()
+    reversed_head = solution.reverseList(head)
+    print(linked_list_to_list(reversed_head)) 
